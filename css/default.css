@@ -1,0 +1,471 @@
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: white;
+  font-family: "Recursive", sans-serif;
+  margin: 0;
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+}
+
+a,
+label,
+li,
+p,
+span {
+  /* 
+  font-family: "Roboto Condensed", sans-serif; */
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Inconsolata", monospace;
+  font-size: calc(0.5rem + 1vw);
+  line-height: calc(12px + 1.5vw);
+  -webkit-transition: font-size 1s ease-in-out;
+  transition: font-size 1s ease-in-out;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*scroll customizer*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f121d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  background-color: #1e273e;
+  margin: 0;
+  padding: 0;
+}
+
+html body #header-nav {
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
+  width: 100%;
+  z-index: 3;
+}
+
+html body #header-nav #nav-wrapper {
+  background-color: #1e273e;
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 0 calc(11vw - 10px);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+html body #header-nav #nav-wrapper nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(30px + 3vw);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html body #header-nav #nav-wrapper nav #logo {
+  color: #67b6d4;
+  font-size: calc(0.5rem + 2vw);
+  letter-spacing: 8px;
+  padding: 12px 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html body #header-nav #nav-wrapper nav #logo:hover {
+  text-shadow: 0px 0px 20px rgba(103, 182, 212, 0.5);
+}
+
+html body #header-nav #nav-wrapper nav #nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Recursive", sans-serif;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html body #header-nav #nav-wrapper nav #nav-list li a {
+  color: white;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 12px 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+html body #header-nav #nav-wrapper nav #nav-list li a:hover {
+  color: #67b6d4;
+}
+
+html body #header-nav #nav-wrapper nav #hamburger-menu {
+  display: none;
+  z-index: 20;
+}
+
+html body #header-nav #nav-wrapper nav #hamburger-menu #hamburger-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+html body #header-nav #nav-wrapper nav #hamburger-menu #hamburger-button .hamburger-strip {
+  background-color: white;
+  border-radius: 10px;
+  margin: 3px 0;
+  height: calc(1px + 0.5vw);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+html body #header-nav #nav-wrapper nav #hamburger-menu #hamburger-button:hover .hamburger-strip {
+  background-color: #67b6d4;
+}
+
+@media screen and (max-width: 800px) {
+  html body #header-nav #nav-wrapper nav #nav-list {
+    background-color: #26314b;
+    -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    padding-top: 70px;
+    position: fixed;
+    right: calc(-1 * (10px + 30vw));
+    top: 0;
+    width: calc(10px + 30vw);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  html body #header-nav #nav-wrapper nav #nav-list li {
+    margin: 20px 0;
+  }
+  html body #header-nav #nav-wrapper nav #hamburger-menu {
+    display: block;
+  }
+}
+
+html main .content-wrapper {
+  padding: calc(5px + 10vw) 11vw;
+}
+
+html main .content-wrapper .the-lists {
+  color: #67b6d4;
+}
+
+html main .content-wrapper .the-lists a:hover {
+  color: #67b6d4;
+}
+
+html main .content-wrapper .blue-span {
+  color: #67b6d4;
+  -webkit-transition: all 1s, text-shadow 0.5s;
+  transition: all 1s, text-shadow 0.5s;
+}
+
+html main .content-wrapper .blue-span:hover {
+  text-shadow: 0px 0px 20px rgba(103, 182, 212, 0.7);
+}
+
+html main #intro {
+  padding-top: calc(1px + 6vw);
+}
+
+html main #intro #hello {
+  color: #67b6d4;
+  font-size: calc((0.5rem + 0.8vw) + 1px);
+  font-weight: 600;
+  letter-spacing: 4px;
+  margin: 0;
+  z-index: 10;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+html main #intro #hello:hover {
+  text-shadow: 0px 0px 20px rgba(103, 182, 212, 0.5);
+}
+
+html main #intro #name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: calc(1.5rem + 4vw);
+  margin-bottom: 20px;
+}
+
+html main #intro #title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: calc(1.5rem + 3vw);
+  /*5.5vw;*/
+  margin-bottom: 40px;
+}
+
+html main #intro #sort-desc {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+  min-width: calc(170px + 35vw);
+  width: calc(20px + 40vw);
+}
+
+html main #intro #button1 {
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #1e273e;
+  font-size: calc(0.5rem + 1.5vw);
+  margin: 0;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+html main #intro #button1:hover {
+  background-color: #0f121d;
+  color: white;
+}
+
+html main .section-titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .section-titles h3 {
+  font-size: calc(0.5rem + 2vw);
+  margin-right: calc(5px + 2vw);
+}
+
+html main .section-titles #title-strip {
+  width: 30%;
+  height: calc(1px + 1.3vw);
+  background: -webkit-gradient(linear, left top, right top, from(#67b6d4), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #67b6d4, rgba(0, 0, 0, 0));
+}
+
+html main #about-me aside {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main #about-me aside #photo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: calc(5px + 2vw);
+  width: 40%;
+}
+
+html main #about-me aside #photo #photo-wrapper {
+  border-radius: 4px;
+  border: solid 1px #67b6d4;
+  height: 30vw;
+  max-height: 350px;
+  max-width: 350px;
+  position: relative;
+  width: 30vw;
+}
+
+html main #about-me aside #photo #photo-wrapper img {
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  transition: -webkit-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out, -webkit-filter 0.5s ease-in-out;
+}
+
+html main #about-me aside #photo #photo-wrapper #my-photo-layer {
+  background-color: #2f3e64;
+  border-radius: 4px;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+html main #about-me aside #photo #photo-wrapper:hover img {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+html main #about-me aside #photo #photo-wrapper:hover #my-photo-layer {
+  opacity: 0;
+}
+
+html main #about-me aside #desc-wrappper {
+  width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+  html main #about-me aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  html main #about-me aside #photo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
+    padding-top: calc(5px + 2vw);
+    width: 100%;
+  }
+  html main #about-me aside #photo #photo-wrapper {
+    height: 40vw;
+    width: 40vw;
+  }
+  html main #about-me aside #desc-wrappper {
+    width: 100%;
+  }
+}
+
+html main #contact {
+  max-width: 800px;
+}
+
+html main #contact form {
+  margin-top: calc(5px + 2vw);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html main #contact form label {
+  font-size: calc(0.5rem + 1vw + 5px);
+}
+
+html main #contact form input,
+html main #contact form textarea {
+  font-size: calc(0.5rem + 1vw);
+  height: calc(10px + 2vw);
+  margin-bottom: calc(5px + 1vw);
+  border-radius: 5px;
+  padding: 3px 8px;
+}
+
+html main #contact form input[type="submit"] {
+  width: calc(10px + 15vw);
+  height: calc(12px + 5vw);
+  background-color: #e6e6e6;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #1e273e;
+  font-size: calc(0.5rem + 2vw);
+  margin: 0;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+html main #contact form input[type="submit"]:hover {
+  background-color: #0f121d;
+  color: white;
+}
+
+html footer {
+  padding: 0 11vw;
+}
+
+.btn-hamburger #strip-1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+          transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.btn-hamburger #strip-2 {
+  opacity: 0;
+  -webkit-transform: translate(30px, 0);
+          transform: translate(30px, 0);
+}
+
+.btn-hamburger #strip-3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -8px);
+          transform: rotate(45deg) translate(-7px, -8px);
+}
+/*# sourceMappingURL=default.css.map */

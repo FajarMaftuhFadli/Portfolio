@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fajar Maftuh Fadli</title>
+
+  <link rel="icon" href="img/favicon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@700&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+  <header id="header-nav">
+    <div id="nav-wrapper">
+      <nav>
+        <a href="#">
+          <h2 id="logo">#FAJAR;</h2>
+        </a>
+          <ul id="nav-list">
+            <li><a onclick="hamburgerAnim(this)" href="#about-me">Tentang</a></li>
+            <li><a onclick="hamburgerAnim(this)" href="#education">Edukasi</a></li>
+            <li><a onclick="hamburgerAnim(this)" href="#skill">Keahlian</a></li>
+            <li><a onclick="hamburgerAnim(this)" href="#contact">Contact</a></li>
+          </ul>
+        <div id="hamburger-menu" onclick="hamburgerAnim(this)">
+          <div id="hamburger-button">
+            <div id="strip-1" class="hamburger-strip"></div>
+            <div id="strip-2" class="hamburger-strip"></div>
+            <div id="strip-3" class="hamburger-strip"></div>
+          </div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div id="line-wrapper">
+    <div>
+      <div id="line1-wrapper">
+        <div class="line1" style="position: relative; top: 50px;"></div>
+        <div class="line1" style="position: relative; top: 25px;"></div>
+        <div class="line1"></div>
+      </div>
+      <div id="page-number-wrapper">
+        <p id="page-number">01</p>
+      </div>
+    </div>
+    <div id="line2"></div>
+  </div>
+  </div>
+  <main>
+    <section id="intro" class="content-wrapper">
+      <p id="hello">C:\Hello World\My Name Is>_</p>
+      <h1 id="name">Fajar Maftuh Fadli</h1>
+      <h2 id="title">Web Developer & Designer</h2>
+      <p id="sort-desc">
+        Freelancer web developer & designer berbasis di Depok, Indonesia.
+        Sangat berpengalaman dalam membangun web dengan design yang indah dan
+        functional.
+      </p>
+      <a id="button1" href="#contact">Hubungi Saya</a>
+      <div id="button-shadow"></div>
+    </section>
+    <section id="about-me" class="content-wrapper">
+      <aside>
+        <div id="photo">
+          <div id="photo-wrapper">
+            <img src="img/my-Photo.png" alt="My Portrait">
+            <div id="my-photo-layer"></div>
+          </div>
+        </div>
+        <article id="desc-wrappper">
+          <div class="section-titles">
+            <h3>Tentang Saya</h3>
+            <div id="title-strip"></div>
+          </div>
+          <div id="about-desc">
+            <p>Hi, nama saya <span class="blue-span">Fajar Maftuh Fadli</span>. Saya freelancer web developer & designer
+              berbasis di Depok, Indonesia. Saat ini saya adalah mahasiswa di Universitas Gunadarma. Di Universitas
+              Gunadarma
+              saya juga menjadi asisten Lab Teknik Informatika.<br><br>Saya mempunyai passion pada segala hal yang ada
+              di internet khususnya yang berkaitan dengan design. Saya mempunyai tujuan untuk membangun product dengan
+              design yang indah dan functional.</p>
+          </div>
+        </article>
+      </aside>
+    </section>
+    <section id="education" class="content-wrapper">
+      <article id="desc-wrappper">
+        <div class="section-titles">
+          <h3>Edukasi</h3>
+          <div id="title-strip"></div>
+        </div>
+        <p>Saat ini saya adalah mahasiswa di Universitas Gunadarma.<br>Di Universitas Gunadarma saya juga menjadi
+          asisten Lab Teknik Informatika.<br><br>Saya juga belajar web develompent dari berbagai website seperti:</p>
+        <ul>
+          <li class="the-lists"><a target="_blank" href="https://www.sololearn.com/">SoloLearn</a></li>
+          <li class="the-lists"><a target="_blank" href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+          <li class="the-lists"><a target="_blank" href="https://www.youtube.com/">Youtube</a></li>
+          <li class="the-lists"><a target="_blank" href="https://www.dicoding.com/">Dicoding</a></li>
+          <li style="opacity: 0.3;">Dan masih banyak lagi</li>
+        </ul>
+      </article>
+    </section>
+    <section id="skill" class="content-wrapper">
+      <article id="desc-wrappper">
+        <div class="section-titles">
+          <h3>Keahlian</h3>
+          <div id="title-strip"></div>
+        </div>
+        <p>
+          Saya mempunyai passion pada segala hal yang ada di internet khususnya yang berkaitan dengan design. Saya
+          mempunyai tujuan untuk membangun product dengan design yang indah dan functional.<br><br>Saya memiliki dasar
+          yang kuat pada <span class="blue-span">HTML</span>, <span class="blue-span">CSS</span> dan <span
+            class="blue-span">JavaScript</span>. Saya juga memiliki skill-skill lain seperti:
+        </p>
+        <ul>
+          <li class="the-lists"><a href="#">SASS</a></li>
+          <li class="the-lists"><a href="#">Adobe XD</a></li>
+          <li class="the-lists"><a href="#">C#</a></li>
+          <li class="the-lists"><a href="#">C++</a></li>
+          <li style="opacity: 0.3;">Dan masih banyak lagi</li>
+        </ul>
+      </article>
+    </section>
+    <!-- <section id="article" class="content-wrapper"></section> -->
+    <section id="contact" class="content-wrapper">
+      <div class="section-titles">
+        <h3>Contact</h3>
+        <div id="title-strip"></div>
+      </div>
+      <form>
+
+        <label for="fname">Nama</label>
+        <input type="text" id="fname" name="nama" placeholder="Ketik nama anda...">
+    
+        <label for="e-mail">E-mail</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Ketik E-mail anda...">
+        
+        <label for="subjek">Subjek</label>
+        <input type="text" id="subjek" name="subjek" placeholder="Ketik subjek anda...">
+
+        <label for="isi">Isi</label>
+        <textarea id="isi" name="isi" placeholder="Ketik pesan anda..." style="height:200px"></textarea>
+    
+        <input type="submit" value="Kirim" onclick="errorAlert()">
+    
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <!-- <h6>Made with ❤</h6> -->
+      <h4>Credits</h4>
+      <p>Favicon made by
+        <a style="text-decoration: underline;" href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a>
+        from
+        <a style="text-decoration: underline;" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+      </p>
+    </div>
+  </footer>
+  <script src="script/default.js"></script>
+</body>
+
+</html>
